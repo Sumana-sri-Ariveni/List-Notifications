@@ -1,0 +1,90 @@
+.container{
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: center;/* Center the container vertically */
+    min-height: 100vh;
+    
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.heading{
+    font-size: 50px;
+    font-weight : bold;
+    font-family : roboto;
+    margin-bottom: 50px;
+}
+
+
+.notificationscontainer{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap : 50px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    height: 60px;
+    width: 450px;
+    font-size: 16px;
+    font-family: roboto;
+    color : #ffffff;
+}
+
+.button-icon{
+    height : 30px;
+    width : 30px;
+} 
+ 
+.btn-info {
+    background-color: #0b69ff;
+    border :#0b69ff;
+  }
+  
+  .btn-success {
+    background-color: #2dca73;
+    border :#2dca73;
+  }
+  
+  .btn-warn {
+    background-color: #f7c244;
+    border: #f7c244;
+  }
+  
+  .btn-error {
+    background-color: #e74c3c;
+    border : #e74c3c;
+  }
+
+
+
+  @media screen and (min-width: 375px) and (max-width: 576px) {
+    .heading {
+      font-size: 36px;
+    }
+  
+    .button-icon {
+      height: 25px;
+      width: 25px;
+    }
+  
+    .btn {
+      padding: 10px;
+      height: 80px;
+      width: 280px; /* Adjusted width to 200px */
+      font-size: 18px;
+    }
+  
+    .notificationscontainer {
+      gap: 25px; /* Reduced gap between buttons */
+    }
+  }
